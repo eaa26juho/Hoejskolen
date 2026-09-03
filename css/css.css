@@ -1,0 +1,100 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+
+/*Farvepalette*/
+:root{
+  --gammelrosa: #f6baba75; 
+  --background:#f9e7cc;
+  --tekst:#000000;
+  --kontrast:#d4f1bf;
+  --kontrast2:#f4f9d3;
+  --kontrast3:#ffc4e0;
+  --kontrast4:#677ac5;
+  --kontrast5:#e2acff;
+  --pang:#ff9dcb;
+  --transparent:#cd2c2c;
+}
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* shift+option:8 */
+body {
+  background-color:rgb(253, 222, 212);
+  color:var(--transparent);
+}
+
+img{
+  width: 100%;
+}
+
+h1,h2{
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+p{
+  padding: 23px;
+}
+
+
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+
+/*Sticky navigation ("topklistret")*/.   /*var = variabel*/
+nav{
+  position: sticky;
+  top: 0;
+  z-index:999;
+  color:var(--kontrast2); /*color: er altid skriftens farve*/
+  background-color:var(--background);
+}
+
+nav a {
+  color:var(--transparent)
+}
+
+/* Gør loget mindre */
+nav a img {
+  height:99px;
+  width: auto;
+}
+
+/* en clas som flexdemo kan bruges flere gange */
+.flexdemo{
+  display:flex;
+  padding:23px;
+
+}
+
+
+
+
+
+
